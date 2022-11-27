@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sun Nov 27 19:47:32 2022
+[*]
+[dumpfile] "C:\Users\tiger\OneDrive\Documents\CPP\fall2022\cs3650\MIPS_Multi_Implementation\MIPS_Single_Cycle\MIPS_wave.vcd"
+[dumpfile_mtime] "Sun Nov 27 19:43:58 2022"
+[dumpfile_size] 10953
+[savefile] "C:\Users\tiger\OneDrive\Documents\CPP\fall2022\cs3650\MIPS_Multi_Implementation\MIPS_Single_Cycle\MIPS_wave_simulation.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] 92 -50
+*-6.663022 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_MIPS_Single_Cycle.
+[treeopen] tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.
+[sst_width] 197
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.Branch
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.Jump
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.MemWrite
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.MemtoReg
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.PCSrc
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.ALUSrc
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.MemWrite
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.MemtoReg
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.RegDst
+@29
+tb_MIPS_Single_Cycle.u_MIPS_Single_Cycle.RegWrite
+[pattern_trace] 1
+[pattern_trace] 0
