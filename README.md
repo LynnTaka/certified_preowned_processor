@@ -21,4 +21,20 @@ This project adds to the ALU project in both functionality and complexity, and p
 An implementation of a 32-bit single cycle MIPS processor in Verilog: https://github.com/diadatp/mips_cpu
 
 #### What we learned:
-- 
+##### General
+- The simplest possible implementation covers lw, sw, beq, the ALU instructions, and jump.
+- The opcode determines the settings for the ALUOp bits
+- For this implementation each memory is a 64 word x 32 bit array
+- there are seven control signals: RegDst, RegWrite, ALUSrc, PCSrc, MemRead, MemWrite, MemtoReg
+
+##### There are three instruction classes
+- For R-type instructions: | 0  31:26 | rs 25:21 | rt 20:16 | rd 15:11 | shamt 10:6 | funct 5:0 |
+- load or store instructions: | 35 or 43 31:26 | rs 25:21 | rt 20:16 | address 15:0 |
+- branch instructions: | 4 31:26 | rs 25:21 | rt 20:16 | address 15:0 |
+- opcode contained in bits 31:26
+- two registers to be read are in the rs (25:21) and rt (20:16) fields.
+- base register for lw and sw in rs
+
+##### Why you do not want to use single cycle implementation
+- inefficient, because the clock cycle must have the same length for every instruction
+
