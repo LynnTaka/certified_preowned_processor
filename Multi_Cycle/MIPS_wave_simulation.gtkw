@@ -1,0 +1,38 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sun Nov 27 20:02:08 2022
+[*]
+[dumpfile] "C:\Users\tiger\OneDrive\Documents\CPP\fall2022\cs3650\MIPS_Multi_Implementation\MIPS_Multi_Cycle\MIPS_wave.vcd"
+[dumpfile_mtime] "Sun Nov 27 20:00:37 2022"
+[dumpfile_size] 24524
+[savefile] "C:\Users\tiger\OneDrive\Documents\CPP\fall2022\cs3650\MIPS_Multi_Implementation\MIPS_Multi_Cycle\MIPS_wave_simulation.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_MIPS_Multi_Cycle.
+[treeopen] tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.
+[sst_width] 197
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.ALUSrcA
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.Branch
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.MemWrite
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.MemtoReg
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.PCEn
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.RegDst
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.RegWrite
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.ALUControl[2:0]
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.ALUOp[1:0]
+@22
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.ALUOut[31:0]
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.ALUResult[31:0]
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.Adr[31:0]
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.SignImm[31:0]
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.WriteRegData[31:0]
+@23
+tb_MIPS_Multi_Cycle.u_MIPS_Multi_Cycle.WriteReg[4:0]
+[pattern_trace] 1
+[pattern_trace] 0
