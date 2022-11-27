@@ -19,6 +19,7 @@ This project adds to the ALU project in both functionality and complexity, and p
 
 #### Code implementation  
 An implementation of a 32-bit single cycle MIPS processor in Verilog: https://github.com/diadatp/mips_cpu
+https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-the-single-cycle-mips-processor
 
 #### What we learned:
 ##### General
@@ -34,6 +35,9 @@ An implementation of a 32-bit single cycle MIPS processor in Verilog: https://gi
 - opcode contained in bits 31:26
 - two registers to be read are in the rs (25:21) and rt (20:16) fields.
 - base register for lw and sw in rs
+
+##### What we learned during implementation
+- 
 
 ##### Why you do not want to use single cycle implementation
 - inefficient, because the clock cycle must have the same length for every instruction
