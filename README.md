@@ -18,7 +18,9 @@ This project adds to the ALU project in both functionality and complexity, and p
 
 
 #### Code implementation  
-An implementation of a 32-bit single cycle MIPS processor in Verilog: https://github.com/diadatp/mips_cpu
+An implementation of a single cycle MIPS processor in Verilog: https://github.com/diadatp/mips_cpu
+
+An implementation of a single cycle and multi cycle MIPS processor:
 https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-the-single-cycle-mips-processor
 
 #### How to run
