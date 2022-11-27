@@ -53,7 +53,6 @@ $ gtkwave MIPS_wave.vcd<br>
 - two registers to be read are in the rs (25:21) and rt (20:16) fields.
 - base register for lw and sw in rs
 - for loads, rt is the destination register, for stores rt, is the source register
-- 
 
 ##### Why you do not want to use single cycle implementation
 - inefficient, because the clock cycle must have the same length for every instruction
