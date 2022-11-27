@@ -60,11 +60,11 @@ $ gtkwave MIPS_wave.vcd<br>
 - violates the idea of making the common case fast
 
 #### Pipelined datapath and control
-- five stages
-  IF: instruction fetch
-  ID: instruction decode and register file read
-  EX: execution or address calculation
-  MEM: data memory access
-  WB: writeback
+- five stages:
+IF: instruction fetch
+ID: instruction decode and register file read
+EX: execution or address calculation
+MEM: data memory access
+WB: writeback
 - improves throughput and program execution time
 - clock cycle time is limited by longest pipeline stage
