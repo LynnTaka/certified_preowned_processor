@@ -25,24 +25,18 @@ https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-
 
 #### How to run
 ##### single-cycle MIPS processor
-$ cd Single_Cycle
+$ cd Single_Cycle<br>
+$ iverilog -o MIPS_wave -y ./ tb_MIPS_Single_Cycle.v<br>
+$ vvp -n MIPS_wave --lxt2<br>
+$ gtkwave MIPS_wave.vcd<br>
 
-$ iverilog -o MIPS_wave -y ./ tb_MIPS_Single_Cycle.v
+##### 5 stage pipeline MIPS processor
+$ cd MIPS_Pipeline<br>
+$ iverilog -o MIPS_wave -y ./ tb_MIPS_Pipeline.v<br>
+$ vvp -n MIPS_wave --lxt2<br>
+$ gtkwave MIPS_wave.vcd<br>
 
-$ vvp -n MIPS_wave --lxt2
-
-$ gtkwave MIPS_wave.vcd
-
-##### multi-cycle MIPS processor
-$ cd Multi_Cycle
-
-$ iverilog -o MIPS_wave -y ./ tb_MIPS_Multi_Cycle.v
-
-$ vvp -n MIPS_wave --lxt2
-
-$ gtkwave MIPS_wave.vcd
-
-- our waveforms are saved as MIPS_wave_simulation.gtkw
+- Our waveforms are saved as MIPS_wave_simulation.gtkw
 
 #### What we learned:
 ##### General
