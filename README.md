@@ -21,6 +21,21 @@ This project adds to the ALU project in both functionality and complexity, and p
 An implementation of a 32-bit single cycle MIPS processor in Verilog: https://github.com/diadatp/mips_cpu
 https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-the-single-cycle-mips-processor
 
+#### How to run
+##### single-cycle MIPS processor
+$ cd Single_Cycle
+$ iverilog -o MIPS_wave -y ./ tb_MIPS_Single_Cycle.v
+$ vvp -n MIPS_wave --lxt2
+$ gtkwave MIPS_wave.vcd
+
+##### multi-cycle MIPS processor
+$ cd Multi_Cycle
+$ iverilog -o MIPS_wave -y ./ tb_MIPS_Multi_Cycle.v
+$ vvp -n MIPS_wave --lxt2
+$ gtkwave MIPS_wave.vcd
+
+- our waveforms are saved as MIPS_wave_simulation.gtkw
+
 #### What we learned:
 ##### General
 - The simplest possible implementation covers lw, sw, beq, the ALU instructions, and jump.
@@ -35,9 +50,6 @@ https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-
 - opcode contained in bits 31:26
 - two registers to be read are in the rs (25:21) and rt (20:16) fields.
 - base register for lw and sw in rs
-
-##### What we learned during implementation
-- 
 
 ##### Why you do not want to use single cycle implementation
 - inefficient, because the clock cycle must have the same length for every instruction
