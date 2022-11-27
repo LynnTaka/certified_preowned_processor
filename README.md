@@ -52,7 +52,20 @@ $ gtkwave MIPS_wave.vcd<br>
 - opcode contained in bits 31:26
 - two registers to be read are in the rs (25:21) and rt (20:16) fields.
 - base register for lw and sw in rs
+- for loads, rt is the destination register, for stores rt, is the source register
+- 
 
 ##### Why you do not want to use single cycle implementation
 - inefficient, because the clock cycle must have the same length for every instruction
+- clock cycle is determined only by worst-case delay for every instruction
+- violates the idea of making the common case fast
 
+#### Pipelined datapath and control
+- five stages
+  IF: instruction fetch
+  ID: instruction decode and register file read
+  EX: execution or address calculation
+  MEM: data memory access
+  WB: writeback
+- improves throughput and program execution time
+- clock cycle time is limited by longest pipeline stage
