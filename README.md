@@ -59,7 +59,7 @@ $ gtkwave MIPS_wave.vcd<br>
 - clock cycle is determined only by worst-case delay for every instruction
 - violates the idea of making the common case fast
 
-#### Pipelined datapath and control
+##### Pipelined datapath and control
 - five stages
 - IF: instruction fetch
 - ID: instruction decode and register file read
