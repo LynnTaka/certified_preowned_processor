@@ -96,5 +96,5 @@ $ gtkwave MIPS_wave.vcd<br>
 - for lw and sw instructions compute the memory address from which we have to fetch or store data.
 
 7. Shifter (for BEQ)
-- if codition is false, execute next instruction
+- if condition is false, execute next instruction
 - if condition is true, branch to next instruction address
