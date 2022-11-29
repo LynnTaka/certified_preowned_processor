@@ -17,11 +17,13 @@ This project adds to the ALU project in both functionality and complexity, and p
 
 
 
-#### Code implementation  
+#### Code implementation and Information References
 An implementation of a single cycle MIPS processor in Verilog: https://github.com/diadatp/mips_cpu
 
 An implementation of a single cycle and multi cycle MIPS processor:
 https://github.com/Hola39e/MIPS_Multi_Implementation#simulation-benchmarking-of-the-single-cycle-mips-processor
+
+Information: https://electrobinary.blogspot.com/2021/02/mips-processor-design-using-verilog-part1.html
 
 #### How to run
 ##### single-cycle MIPS processor
@@ -68,3 +70,31 @@ $ gtkwave MIPS_wave.vcd<br>
 - WB: writeback
 - improves throughput and program execution time
 - clock cycle time is limited by longest pipeline stage
+
+##### Components of the processor datapath:
+1. Instruction Memory:
+- store instructions of the program
+- supply instruction locatted at given address
+- load instruction memory using ReadMem
+
+2. Program Counter
+- holds address of the current instruction
+- increment address by 4
+- new instruction executed at every clock cycle
+
+3. Register File:
+- this module will enclose all the independent registers of the processor, to perform write and read operations
+- we can load register memory using MemRead from a memory file
+
+4. ALU:
+ - ALU will be required to perofrm operations on the data provided to it
+
+5. Sign Extension Unit
+
+6. Data Memory:
+- load data memory using ReadMem function
+- for lw and sw instructions compute the memory address from which we have to fetch or store data.
+
+7. Shifter (for BEQ)
+- if codition is false, execute next instruction
+- if condition is true, branch to next instruction address
