@@ -1,21 +1,37 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Sun Nov 27 20:07:51 2022
+[*] Fri Dec 02 18:48:46 2022
 [*]
-[dumpfile] "C:\Users\tiger\OneDrive\Documents\CPP\fall2022\cs3650\MIPS_Multi_Implementation\MIPS_Pipeline\MIPS_wave.vcd"
-[dumpfile_mtime] "Sun Nov 27 20:06:34 2022"
+[dumpfile] "C:\Users\Lynn\Documents\CPP\FALL 2022\cs3650\MIPS_Multi_Implementation\MIPS_Pipeline\MIPS_wave.vcd"
+[dumpfile_mtime] "Fri Dec 02 18:46:41 2022"
 [dumpfile_size] 30893
-[savefile] "C:\Users\tiger\OneDrive\Documents\CPP\fall2022\cs3650\MIPS_Multi_Implementation\MIPS_Pipeline\MIPS_wave_simulation.gtkw"
+[savefile] "C:\Users\Lynn\Documents\CPP\FALL 2022\cs3650\MIPS_Multi_Implementation\MIPS_Pipeline\MIPS_wave_simulation.gtkw"
 [timestart] 0
 [size] 1000 600
-[pos] -1 -1
-*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 444 74
+*-2.000000 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_MIPS_Pipeline.
 [sst_width] 197
-[signals_width] 102
+[signals_width] 158
 [sst_expanded] 1
 [sst_vpaned_height] 153
 @28
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ALUControlE[2:0]
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ALUControl[2:0]
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ALUOp[1:0]
+@22
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ALUOut[31:0]
+@28
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ALUSrc
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ALUSrcE
+tb_MIPS_Pipeline.u_MIPS_Pipeline.BranchD
+tb_MIPS_Pipeline.u_MIPS_Pipeline.FlushE
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ForwardAD
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ForwardAE[1:0]
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ForwardBD
+tb_MIPS_Pipeline.u_MIPS_Pipeline.ForwardBE[1:0]
+tb_MIPS_Pipeline.u_MIPS_Pipeline.JumpD
+tb_MIPS_Pipeline.u_MIPS_Pipeline.JumpD
 tb_MIPS_Pipeline.u_MIPS_Pipeline.MemWrite
 tb_MIPS_Pipeline.u_MIPS_Pipeline.MemWriteE
 tb_MIPS_Pipeline.u_MIPS_Pipeline.MemWriteM
@@ -23,12 +39,7 @@ tb_MIPS_Pipeline.u_MIPS_Pipeline.MemtoReg
 tb_MIPS_Pipeline.u_MIPS_Pipeline.MemtoRegE
 tb_MIPS_Pipeline.u_MIPS_Pipeline.MemtoRegM
 tb_MIPS_Pipeline.u_MIPS_Pipeline.MemtoRegW
-tb_MIPS_Pipeline.u_MIPS_Pipeline.PCSrcD
-tb_MIPS_Pipeline.u_MIPS_Pipeline.RegDst
-tb_MIPS_Pipeline.u_MIPS_Pipeline.RegDstE
-tb_MIPS_Pipeline.u_MIPS_Pipeline.RegWrite
-tb_MIPS_Pipeline.u_MIPS_Pipeline.RegWriteE
-tb_MIPS_Pipeline.u_MIPS_Pipeline.RegWriteM
-tb_MIPS_Pipeline.u_MIPS_Pipeline.RegWriteW
+@23
+tb_MIPS_Pipeline.u_MIPS_Pipeline.PCPlus4D[31:0]
 [pattern_trace] 1
 [pattern_trace] 0
