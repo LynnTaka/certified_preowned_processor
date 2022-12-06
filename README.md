@@ -46,7 +46,8 @@ $ gtkwave MIPS_wave.vcd<br>
 - The opcode determines the settings for the ALUOp bits
 - For this implementation each memory is a 64 word x 32 bit array
 - there are seven control signals: RegDst, RegWrite, ALUSrc, PCSrc, MemRead, MemWrite, MemtoReg
-
+- RegWrite and MemWrite can be written to only if the control signal is asserted and there is a positive clock edge.
+- Control signals can be generated with a combinational circuit with the instruction's 32-bit binary encoding as input.
 ##### There are three instruction classes
 - For R-type instructions: | 0  31:26 | rs 25:21 | rt 20:16 | rd 15:11 | shamt 10:6 | funct 5:0 |
 - load or store instructions: | 35 or 43 31:26 | rs 25:21 | rt 20:16 | address 15:0 |
@@ -90,6 +91,8 @@ $ gtkwave MIPS_wave.vcd<br>
  - ALU will be required to perofrm operations on the data provided to it
 
 5. Sign Extension Unit
+- Takes an input of a 16-bit wide value to be extended to 32-bits.
+- Simply replicates the most-significant bit of the original field until reached the desired field width.
 
 6. Data Memory:
 - load data memory using ReadMem function
